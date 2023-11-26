@@ -11,7 +11,7 @@ function Navbar(){
                 <Logo/>
            
             <Search placeholder="search a song of your choise"/>
-            <Button>Give feedback</Button>
+            <Button>Give Feedback</Button>
         </nav>
     )
 }
