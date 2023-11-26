@@ -6,7 +6,7 @@ import Search from "../Search/Search";
 
 function Navbar(){
     return(
-        <nav className={Styles.Navbar}>
+        <nav className={Styles.navbar}>
             <a href="/">
                 <Logo/>
             </a>
