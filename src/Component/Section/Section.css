@@ -1,0 +1,44 @@
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+}
+
+.toggleText{
+    cursor: pointer;
+    color: var(--color-primary);
+}
+
+.cardsWrapper{
+    margin-top:18px;
+}
+
+.wrapper{
+
+    display:flex;
+    gap: 40px;
+    flex-wrap:wrap;
+}
+
+.filterWrapper{
+    margin-top: 15px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  .carousel-card {
+    width: 200px; /* Set your desired width */
+    height: 300px; /* Set your desired height */
+    /* Add any other styles you need for the carousel cards */
+  }
+
+  .toogleText {
+    cursor: pointer;
+    color: var(--color-primary);
+  }
+  

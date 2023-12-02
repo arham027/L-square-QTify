@@ -24,6 +24,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-black);
   color: var(--color-white);
+  overflow: hidden;
 }
 
 img,
@@ -41,3 +42,29 @@ textarea,
 select {
   font: inherit;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  overflow-wrap: break-word;
+}
+#root,
+#next{
+  isolation: isolate;
+}
+
+.swiper-slide{
+  width: auto !important;
+}
+a,
+a:hover,
+a:focus,
+a:active{
+  text-decoration: none;
+  color: inherit;
+}
+
