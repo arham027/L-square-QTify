@@ -4,7 +4,8 @@
     align-items:baseline;
 }
 
-.toggleText{
+.toogleText{
+    
     cursor: pointer;
     color: var(--color-primary);
 }
@@ -31,11 +32,11 @@
     width: 100%;
   }
 
-  .carousel-card {
-    width: 200px; /* Set your desired width */
-    height: 300px; /* Set your desired height */
-    /* Add any other styles you need for the carousel cards */
-  }
+.carousel-card {
+   
+    width: 40px; 
+     height: 30px; 
+        }
 
   .toogleText {
     cursor: pointer;

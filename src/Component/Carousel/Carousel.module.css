@@ -1,3 +1,22 @@
-.wrapper{
+/* Carousel.module.css */
+
+.wrapper {
     position: relative;
+}
+
+.swiper-slide {
+    flex-shrink: 0; 
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    display: flex;
+}
+
+/* Add additional styles for responsiveness if needed */
+@media (max-width: 768px) {
+    .swiper-slide {
+        width: 150px; /* Adjust for smaller screens */
+        height: 250px; /* Adjust for smaller screens */
+    }
 }

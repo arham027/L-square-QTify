@@ -1,12 +1,23 @@
 .wrapper{
-    width:160px
+    /* width:160px */
+    height: 235px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-top: 10px;
 }
 
 .card{
-    position: relative;
+    /* position: relative;
     width: 160px;
     height: 205px;
     border-radius: 10px;
+    overflow: hidden; */
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
 }
 
@@ -36,7 +47,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
-    display: -webkit-box;
+    display:-webkit-box;
     -webkit-box-orient:vertical ;
 }
 
@@ -44,3 +55,23 @@
     background-color: var(--color-black);
     color: white;
 }
+
+/* .card img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    max-width: 100%; 
+    max-height: 100%;
+} */
+
+.cardimgframe {
+    width: 100%;
+    height: 170px;
+ }
+
+ 
+ .cardimgframe img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+ }

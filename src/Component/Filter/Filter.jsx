@@ -30,12 +30,12 @@ function Filters({filters,selectedFilterIndex,setSelectedFilterIndex}){
 
     const handleChange=(event,newValue)=>{
         setSelectedFilterIndex(newValue)
-    }
+    };
     function allyProps(index){
         return{
             id:`simple-tab-${index}`,
             "aria-controls":`simple-tabpanel-${index}`,
-        }
+        };
 
     }
     return (
@@ -55,7 +55,7 @@ function Filters({filters,selectedFilterIndex,setSelectedFilterIndex}){
                 ))}
             </Tabs>
             {filters.map((ele,idx)=>(
-                    <TabPanel value={ele.label} index={idx}/>
+                    <TabPanel value={selectedFilterIndex} index={idx} key={idx}/>
                 ))}
         </div>
     )

@@ -8,17 +8,10 @@ export default function CarouselLeftNavigation(){
     const [isBeginning,setIsBeginning]=useState(swiper.isBeginning);
 
     useEffect(() => {
-        const handleSlideChange = () => {
+      swiper.on("slideChange", function(){
           setIsBeginning(swiper.isBeginning);
-        };
-    
-        swiper.on("slideChange", handleSlideChange);
-    
-        return () => {
-          // Cleanup the event listener when the component unmounts
-          swiper.off("slideChange", handleSlideChange);
-        };
-      }, [swiper]);
+      });
+  });
     return(
         <div className={Styles.leftNavigation}>
           {!isBeginning && (

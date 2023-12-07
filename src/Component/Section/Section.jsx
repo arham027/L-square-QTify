@@ -12,14 +12,15 @@ export default function Section ({title,data,filterSource,type}){
     const [selectedFilterIndex,setSelectedFilterIndex]=useState(0);
     const [carouselToggle,setCarouselToggle]=useState(true);
 
-    useEffect(()=>{
-        if(filterSource){
-            filterSource().then((response)=>{
-                const {data}=response;
+    useEffect(() => {
+        if (filterSource) {
+            filterSource().then((response) => {
+                const { data } = response;
                 setFilters([...filters, ...data]);
-            })
+            });
         }
-    },[]);
+    }, [filterSource, filters]);
+    
 
     const showFilters=filters.length > 1;
     const cardsToRender=data.filter((card)=>

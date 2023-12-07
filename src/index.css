@@ -59,6 +59,9 @@ h6{
 
 .swiper-slide{
   width: auto !important;
+  position: relative;
+  transition-property:transform;
+  display: block;
 }
 a,
 a:hover,

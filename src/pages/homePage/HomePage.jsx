@@ -8,18 +8,22 @@ import { fetchFilters} from "../../Component/api/api";
 function HomePage(props){
     const {data}=useOutletContext();
     const {topAlbums,newAlbums,songs}=data;
-    return<>
+    return(<>
     <Hero/>
     <div className={Styles.wrapper}>
         <Section title="Top Albums"  data={topAlbums} type="album"/>
         <Section title="New Albums"  data={newAlbums} type="album"/>
-        <Section title="Songs"  data={songs} filterSource={fetchFilters}  type="songs"/>
+        <Section title="Songs"  data={songs} filterSource={fetchFilters}  type="song"/>
+
+       
+
+
 
 
 
     </div>
    </>
 
-}
+)}
 
 export default HomePage
